@@ -1,0 +1,14 @@
+server:
+  context-path: /api
+  display-name: ${project.build.finalName}
+  port: ${server.port}
+
+
+spring:
+  application:
+    name: ${project.artifactId}
+  devtools:
+    remote:
+      secret: mysecret
+
+cities.url: ${cities.url}

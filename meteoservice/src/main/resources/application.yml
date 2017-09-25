@@ -1,0 +1,24 @@
+server:
+  context-path: /meteoservice
+  display-name: ${project.build.finalName}
+  port: ${server.port}
+
+security.secret: ${security.secret}
+
+spring:
+  application:
+    name: ${project.artifactId}
+  devtools:
+    remote:
+      secret: mysecret
+  datasource:
+    url: jdbc:postgresql://localhost/meteo
+    username: postgres
+    password: mysecretpassword
+    driver-class-name: org.postgresql.Driver
+    
+weatherapi:
+  url: ${weatherapi.url}
+  api: e9cfef5df7d25e47c62f0e19c4cfe6cb
+  
+

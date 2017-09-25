@@ -1,0 +1,16 @@
+server:
+  context-path: /api
+  display-name: aaaa
+  port: 8081
+
+spring:
+  application:
+    name: aaa
+  devtools:
+    remote:
+      secret: mysecret
+  datasource:
+    url: jdbc:postgresql://localhost/meteo
+    username: postgres
+    password: mysecretpassword
+    driver-class-name: org.postgresql.Driver

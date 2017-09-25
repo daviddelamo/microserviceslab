@@ -1,0 +1,23 @@
+package com.ust.davidlab.meteoservice.model;
+
+import java.sql.Timestamp;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import lombok.Data;
+
+@Entity
+@Data
+public class Meteo {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    
+    private String city_id;
+    private Timestamp lastRefresh;
+    private String weather;
+}
